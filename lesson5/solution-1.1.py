@@ -4,9 +4,10 @@
 Переданы аргументы: var1 = 2, var3 = 10.
 """
 
-def three_args(**kwargs):
+def three_args(*args, **kwargs):
     for key, value in kwargs.items():
         if value is not None:
-            print(key, value)
-A = three_args(var1=2, var2=None, var3=10)
-print( f'Переданы аргументы: {A}')
+            print(f"{key} = {value}")
+
+three_args(var1=2, var3=10)
+
