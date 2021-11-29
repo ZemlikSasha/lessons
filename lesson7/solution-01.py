@@ -19,5 +19,10 @@ if __name__ == "__main__":
     y2= int(input("Enter X1:"))
 
     if check_coords(x1, y1, x2, y2):
-        print("Yes")
+       print("Yes")
+
+    else:
+        print("NO")
+
+
 
