@@ -4,11 +4,11 @@
 """
 
 
-from solution-1.1 import Car
+from solution_1_1 import Car
 
 def fast_speed(car):
     while car.speed < 100:
-        car.increase_speed()
+        car.increase_speeds()
     car.show_speed()
     return
 
